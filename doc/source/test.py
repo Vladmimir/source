@@ -44,6 +44,16 @@ class voiture:
         """Arrête la voiture."""
         print(f"La voiture {self.marque} {self.modèle} s'arrête.")
 
+    def afficher_info(self):
+        """Affiche les informations de la voiture."""
+        info = (
+            f"Voiture:\n"
+            f"Marque: {self.marque}\n"
+            f"Modèle: {self.modèle}\n"
+            f"Année: {self.annee}"
+        )
+        print(info)
+
 
 def entretien_voiture(voiture):
     """
@@ -60,6 +70,27 @@ def entretien_voiture(voiture):
         Un message confirmant que l'entretien est terminé.
     """
     return f"L'entretien de la {voiture.marque} {voiture.modèle} est terminé."
+
+
+def calculer_age_voiture(voiture):
+    """
+    Calcule l'âge de la voiture en années.
+
+    Paramètres:
+    -----------
+    voiture : voiture
+        Une instance de la classe voiture.
+
+    Retourne:
+    ---------
+    int
+        L'âge de la voiture en années.
+    """
+    from datetime import datetime
+
+    current_year = datetime.now().year
+    age = current_year - voiture.annee
+    return age
 
 
 class moteur:
