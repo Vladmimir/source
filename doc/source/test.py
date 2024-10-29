@@ -62,7 +62,6 @@ def entretien_voiture(voiture):
     return f"L'entretien de la {voiture.marque} {voiture.modèle} est terminé."
 
 
-
 class moteur:
     """
     La classe moteur représente un moteur simple.
