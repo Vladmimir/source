@@ -26,3 +26,4 @@ documentation for details.
 
    test.rst
    moteur.rst
+   tests.rst
