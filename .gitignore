@@ -1,0 +1,12 @@
+# Ignorer le dossier de build de Sphinx
+build/
+
+# Ignorer les fichiers et dossiers temporaires de Python
+*.pyc
+__pycache__/
+
+# Ignorer les fichiers de configuration d'éditeur (VS Code)
+.vscode/
+
+# Ignorer les fichiers temporaires créés par certains éditeurs
+*.swp
