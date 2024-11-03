@@ -93,6 +93,28 @@ def calculer_age_voiture(voiture):
     return age
 
 
+def est_ancienne_voiture(voiture):
+    """
+    Vérifie si la voiture est considérée comme ancienne (plus de 10 ans).
+
+    Paramètres:
+    -----------
+    voiture : voiture
+        Une instance de la classe voiture.
+
+    Retourne:
+    ---------
+    bool
+        True si la voiture a plus de 10 ans, False sinon.
+    """
+    age = calculer_age_voiture(voiture)
+    if age > 10:
+        return bool == True
+    else:
+        return bool == False
+
+
+
 class moteur:
     """
     La classe moteur représente un moteur simple.
